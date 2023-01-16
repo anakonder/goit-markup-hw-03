@@ -1,0 +1,216 @@
+:root {
+  --primary-brand: #4d5ae5; /* iris */
+  --pressed-state: #404bbf; /* ocean */
+  --dark: #2e2f42; /* navy blue */
+  --success: #31d0aa; /*green */
+  --text: #434455; /* slate */
+  --subtle-text: #8e8f99; /* light slate */
+  --accent: #e7e9fc; /* cornflower */
+  --light: #f4f4fd; /* cloud */
+  --modal-overlay: rgba(46, 47, 66, 0.4); /* navy blue modal */
+  --hero-background: rgba(46, 47, 66, 0.7); /* gray */
+  --white: #ffffff;
+}
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+
+body {
+  color: var(--text);
+  background-color: #ffffff;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  border: none;
+  cursor: pointer;
+}
+
+.bigger-titles {
+  color: var(--dark);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.smaller-titles {
+  color: var(--dark);
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/**
+  |============================
+  | Header section
+  |============================
+*/
+
+header {
+  background-color: var(--white);
+}
+
+.header-logo {
+  color: var(--dark);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.header-logo-web {
+  color: var(--primary-brand);
+}
+
+.header-nav-link {
+  color: var(--dark);
+
+  font-weight: 500;
+}
+
+.header-nav-link.current {
+  color: var(--pressed-state);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--pressed-state);
+}
+
+.header-nav-link:active {
+  color: var(--pressed-state);
+}
+
+.header-contact {
+  color: var(--text);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--pressed-state);
+}
+
+.hero {
+  background-color: var(--dark);
+}
+
+.hero-baner {
+  color: var(--white);
+
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+
+.hero-button {
+  background-color: var(--primary-brand);
+  color: var(--white);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--pressed-state);
+}
+
+/**
+  |============================
+  | Abaut us
+  |============================
+*/
+/**
+  |============================
+  | What are we doing
+  |============================
+*/
+
+.work-field {
+  background-color: var(--white);
+}
+
+/**
+  |============================
+  | Aur team
+  |============================
+*/
+
+.team {
+  background-color: var(--light);
+}
+
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+
+.filter-button {
+  background-color: var(--accent);
+  color: var(--primary-brand);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--pressed-state);
+  color: var(--white);
+}
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.footer-logo {
+  color: var(--light);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+}
+
+.portfolio-link {
+  color: var(--text);
+}
