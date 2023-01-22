@@ -39,6 +39,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -120,6 +122,22 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+}
+
+/**
+  |============================
+  | Cad-set
+  |============================
+*/
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+
+  flex-basis: calc(
+    (100% - (var(--indent) * (var(--items) - 1))) / var(--items)
+  );
 }
 
 /**
@@ -256,7 +274,7 @@ body {
   |============================
 */
 
-.benefit-list {
+/* .benefit-list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
@@ -266,11 +284,8 @@ body {
   flex-basis: calc(
     (100% - (var(--indent) * (var(--items) - 1))) / var(--items)
   );
-}
+} */
 
-.benefit-list > li {
-  /* width: 264px; */
-}
 /**
   |============================
   | What are we doing
@@ -283,7 +298,12 @@ body {
 
 .work-field-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.work-field-item {
+  --items: 3;
 }
 
 .work-list-img {
