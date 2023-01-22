@@ -14,6 +14,8 @@
   --white: #ffffff;
 
   /* others */
+  --indent: 24px;
+  --items: 4;
 }
 /**
   |============================
@@ -256,11 +258,18 @@ body {
 
 .benefit-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.benefit-items {
+  flex-basis: calc(
+    (100% - (var(--indent) * (var(--items) - 1))) / var(--items)
+  );
 }
 
 .benefit-list > li {
-  width: 264px;
+  /* width: 264px; */
 }
 /**
   |============================
