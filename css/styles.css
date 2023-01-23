@@ -278,15 +278,18 @@ body {
 
 .benefit-list {
   display: flex;
-  flex-wrap: wrap;
   gap: var(--indent);
 }
 
-.benefit-items {
+.benefit-list > li {
+  width: 264px;
+}
+
+/* .benefit-items {
   flex-basis: calc(
     (100% - (var(--indent) * (var(--items) - 1))) / var(--items)
   );
-}
+} */
 
 /**
   |============================
@@ -295,18 +298,20 @@ body {
 */
 
 .work-field {
+  padding-top: 0;
+
   background-color: var(--white);
 }
 
 .work-field-list {
   display: flex;
-  flex-wrap: wrap;
   gap: var(--indent);
 }
 
+/* 
 .work-field-item {
   --items: 3;
-}
+} */
 
 .work-list-img {
   border: 1px solid var(--accent);
@@ -327,6 +332,7 @@ body {
 
   text-align: center;
 
+  background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -372,6 +378,8 @@ body {
 }
 
 .filter-button {
+  padding: 12px 24px;
+
   border-radius: 4px;
   background-color: var(--accent);
   color: var(--primary-brand);
